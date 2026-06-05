@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --radius: 14px;
+}
+
+.theme-glass {
+  background: 
+    radial-gradient(1200px 600px at 10% -10%, rgba(244,63,94,0.25), transparent),
+    radial-gradient(1000px 500px at 110% 10%, rgba(244,63,94,0.15), transparent);
+}
+
+.backdrop-glass {
+  @apply bg-white/70 dark:bg-zinc-900/70 backdrop-blur-xl shadow-glass border border-white/40 dark:border-white/10;
+}
+
+.backdrop-glass-strong {
+  @apply bg-white/85 dark:bg-zinc-900/85 backdrop-blur-2xl shadow-glass border border-white/50 dark:border-white/5;
+}
+
+.focus-outline {
+  @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-zinc-950 rounded-md;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+  body {
+    @apply bg-white text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100 antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    width: 100%;
+  }
+}
+
+@layer utilities {
+  .animate-in {
+    animation: animate-in 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  @keyframes animate-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .no-scroll {
+    overflow: hidden;
+    height: 100vh;
+  }
+
+  .bg-grid {
+    background-image: 
+      linear-gradient(rgba(244,63,94,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(244,63,94,0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+}
+
+
