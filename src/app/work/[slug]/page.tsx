@@ -49,8 +49,30 @@ export default function ProjectPage({ params }: Props) {
             Back to work
           </Link>
 
-          <div className="mb-4 inline-block rounded-full bg-brand-100 px-3 py-1 text-sm font-medium text-brand-700 dark:bg-brand-900/30 dark:text-brand-300">
-            {project.category}
+          <div className="mb-4 flex items-center gap-3">
+            <span className="inline-block rounded-full bg-brand-100 px-3 py-1 text-sm font-medium text-brand-700 dark:bg-brand-900/30 dark:text-brand-300">
+              {project.category}
+            </span>
+            <span className={`inline-block rounded-full px-3 py-1 text-sm font-medium ${
+              project.status === 'Deployed Live' 
+                ? 'bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-300' 
+                : 'bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300'
+            }`}>
+              {project.status}
+            </span>
+            {project.liveUrl && (
+              <a
+                href={project.liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 rounded-full bg-brand-600 px-3 py-1 text-sm font-medium text-white hover:bg-brand-700"
+              >
+                View Live
+                <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
+            )}
           </div>
 
           <h1 className="mb-4 text-4xl font-bold md:text-5xl">{project.title}</h1>

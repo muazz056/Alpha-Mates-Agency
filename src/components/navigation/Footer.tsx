@@ -12,7 +12,6 @@ const footerLinks = {
     { href: 'mailto:hello@example.com', label: 'hello@example.com', external: true },
     { href: 'https://calendly.com/', label: 'Book a Call', external: true },
     { href: 'https://linkedin.com/', label: 'LinkedIn', external: true },
-    { href: '/resume.pdf', label: 'Download Resume', external: true },
   ],
   legal: [
     { href: '/privacy', label: 'Privacy Policy' },

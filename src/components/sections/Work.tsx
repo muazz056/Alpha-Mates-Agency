@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { projects } from '@/lib/data/projects';
 import { OptimizedImage } from '@/components/ui/OptimizedImage';
 
-const categories = ['All', 'Custom Development', 'AI Chatbot', 'Shopify', 'WordPress'];
+const categories = ['All', 'Custom Development', 'AI Chatbot', 'Shopify', 'WordPress', 'Wix'];
 
 export function Work() {
   const [filter, setFilter] = useState('All');
@@ -73,8 +73,17 @@ export function Work() {
                       className="h-full w-full object-cover transition duration-500 group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-                    <div className="absolute right-3 top-3 rounded-full bg-black/60 px-3 py-1 text-xs font-medium text-white backdrop-blur-sm">
-                      {project.category}
+                    <div className="absolute right-3 top-3 flex gap-2">
+                      <span className="rounded-full bg-black/60 px-3 py-1 text-xs font-medium text-white backdrop-blur-sm">
+                        {project.category}
+                      </span>
+                      <span className={`rounded-full px-3 py-1 text-xs font-medium backdrop-blur-sm ${
+                        project.status === 'Deployed Live' 
+                          ? 'bg-green-500/80 text-white' 
+                          : 'bg-blue-500/80 text-white'
+                      }`}>
+                        {project.status}
+                      </span>
                     </div>
                     <div className="absolute bottom-3 left-3 translate-y-4 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
                       <span className="rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-zinc-900 backdrop-blur-sm">
@@ -104,6 +113,22 @@ export function Work() {
                         </span>
                       )}
                     </div>
+                    {project.liveUrl && (
+                      <div className="mt-3">
+                        <a
+                          href={project.liveUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-1 text-xs font-semibold text-brand-600 hover:text-brand-700 dark:text-brand-400 dark:hover:text-brand-300"
+                          onClick={(e) => e.stopPropagation()}
+                        >
+                          View Live
+                          <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                          </svg>
+                        </a>
+                      </div>
+                    )}
                   </div>
                 </Link>
               </motion.div>
