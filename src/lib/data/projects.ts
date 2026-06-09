@@ -106,7 +106,10 @@ export const projects: Project[] = [
     slug: 'track-hero',
     category: 'Custom Development',
     description: 'Comprehensive fullstack platform for motorsport event scheduling, registration, and race timing management',
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&h=600&fit=crop',
+    image: '/track-hero-img.png',
+    gallery: [
+      '/track-hero-img.png',
+    ],
     tags: ['React', 'TypeScript', 'Redux Toolkit', 'Django', 'PostgreSQL', 'Stripe'],
     year: '2024',
     client: 'Motorsport Events',
@@ -119,7 +122,8 @@ export const projects: Project[] = [
       'Event scheduling and registration system',
       'Real-time data synchronization'
     ],
-    status: 'Production Grade'
+    liveUrl: 'https://trackhero.com',
+    status: 'Deployed Live'
   },
   {
     id: '5',

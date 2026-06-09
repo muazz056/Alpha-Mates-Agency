@@ -42,7 +42,7 @@ const topProjects = [
   {
     title: 'Track Hero',
     tech: 'React, TypeScript, Redux Toolkit, Django, PostgreSQL, Stripe',
-    liveUrl: '',
+    liveUrl: 'https://trackhero.com',
     highlights: [
       'Developed features in a comprehensive fullstack platform for motorsport event scheduling, registration, and race timing management',
       'Integrated Stripe payment gateway and Django REST Framework for secure transactions with real-time data synchronization'
