@@ -12,9 +12,12 @@ export async function POST(request: NextRequest) {
     }
 
     const BREVO_API_KEY = (process.env.BREVO_API_KEY || '').trim();
-    const BREVO_SENDER_EMAIL = process.env.BREVO_SENDER_EMAIL || 'muaxijaz@gmail.com';
-    const BREVO_SENDER_NAME = process.env.BREVO_SENDER_NAME || 'Muaz Ijaz';
-    const CONTACT_EMAIL = process.env.CONTACT_EMAIL || 'muaxijaz@gmail.com';
+    // Debug logging for deployment environment
+    if (!BREVO_API_KEY) {
+      console.warn('⚠️ Brevo API key is missing. Check Vercel env configuration.');
+    } else {
+      console.log('✅ Brevo API key loaded (length:', BREVO_API_KEY.length, ')');
+    }
 
     // Log configuration for debugging (avoid logging the actual API key)
     if (!BREVO_API_KEY) {
@@ -22,6 +25,10 @@ export async function POST(request: NextRequest) {
     } else {
       console.log('Brevo configuration loaded.');
     }
+
+    const BREVO_SENDER_EMAIL = process.env.BREVO_SENDER_EMAIL || 'muaxijaz@gmail.com';
+    const BREVO_SENDER_NAME = process.env.BREVO_SENDER_NAME || 'Muaz Ijaz';
+    const CONTACT_EMAIL = process.env.CONTACT_EMAIL || 'muaxijaz@gmail.com';
 
     if (!BREVO_API_KEY) {
       console.log('Contact form submission (Brevo not configured):', data);
@@ -78,7 +85,7 @@ export async function POST(request: NextRequest) {
 
     if (!response.ok) {
       const errorBody = await response.text();
-      console.error('Brevo error (status', response.status, '):', errorBody);
+      console.error('❌ Brevo request failed. Status:', response.status, 'Body:', errorBody);
       return NextResponse.json(
         { error: 'Failed to send message via Brevo', details: errorBody },
         { status: 500 }
