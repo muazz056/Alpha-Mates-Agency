@@ -178,7 +178,7 @@ export function MobileMenu() {
 
               <div className="mt-4 flex items-center justify-center gap-6 text-sm text-zinc-600 dark:text-zinc-400">
                 <a
-                  href="mailto:hello@example.com"
+                  href="mailto:muaxijaz@gmail.com"
                   className="flex items-center gap-2 hover:text-brand-600 dark:hover:text-brand-400"
                 >
                   <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">

@@ -9,7 +9,7 @@ const footerLinks = {
     { href: '/contact', label: 'Contact' },
   ],
   connect: [
-    { href: 'mailto:hello@example.com', label: 'hello@example.com', external: true },
+    { href: 'mailto:muaxijaz@gmail.com', label: 'muaxijaz@gmail.com', external: true },
     { href: 'https://calendly.com/', label: 'Book a Call', external: true },
     { href: 'https://linkedin.com/', label: 'LinkedIn', external: true },
   ],

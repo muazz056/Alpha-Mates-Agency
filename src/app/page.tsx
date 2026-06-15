@@ -13,7 +13,7 @@ import { ClientLogos } from '@/components/sections/ClientLogos';
 import { BackToTop } from '@/components/ui/BackToTop';
 
 export default function HomePage() {
-  return (
+  return (    
     <div className="flex min-h-screen flex-col">
       <Navbar />
       <main id="main" className="flex-1">
