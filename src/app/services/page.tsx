@@ -4,7 +4,7 @@ import { Services } from '@/components/sections/Services';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Services — Custom Development, AI Chatbots & Platform Builds',
+  title: 'Services — Custom Development & AI, Shopify, WordPress, Wix',
   description:
     'Full-stack JavaScript & Python development, AI RAG chatbots, Shopify, WordPress, and Wix websites. Production-ready software built for scale.',
 };

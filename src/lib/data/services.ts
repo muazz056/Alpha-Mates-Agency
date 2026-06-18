@@ -14,45 +14,25 @@ export type Service = {
 export const services: Service[] = [
   {
     id: '1',
-    title: 'Custom Web Development',
-    slug: 'custom-web-development',
+    title: 'Custom Development & AI',
+    slug: 'custom-development-ai',
     icon: '💻',
-    shortDescription: 'Full-stack JavaScript & Python applications built for performance and scale',
-    fullDescription: 'We design and build custom web applications tailored to your business needs. From MVPs to enterprise platforms, we use modern frameworks like Next.js, React, Django, and FastAPI to deliver lightning-fast, maintainable solutions.',
+    shortDescription: 'Full-stack applications, AI/RAG chatbots, and intelligent platforms built for performance and scale',
+    fullDescription: 'We design and build custom web applications and AI-powered solutions tailored to your business needs. From MVPs to enterprise platforms, we use modern frameworks like Next.js, React, Django, FastAPI, and LangChain to deliver lightning-fast, maintainable solutions with integrated AI capabilities.',
     features: [
       'React / Next.js / Vue.js frontend',
       'Node.js / Python / Django backend',
       'RESTful & GraphQL APIs',
       'PostgreSQL / MongoDB databases',
+      'RAG chatbots with GPT-4, LangChain, and vector databases',
       'Real-time WebSocket features',
       'Cloud deployment (AWS / Vercel / Railway)',
       'CI/CD pipeline setup',
       'Performance optimization (< 1s load times)'
     ],
-    technologies: ['React', 'Next.js', 'Node.js', 'Python', 'Django', 'FastAPI', 'PostgreSQL', 'MongoDB'],
+    technologies: ['React', 'Next.js', 'Node.js', 'Python', 'Django', 'FastAPI', 'PostgreSQL', 'MongoDB', 'LangChain', 'OpenAI'],
     startingPrice: '$5,000',
     deliveryTime: '4-8 weeks'
-  },
-  {
-    id: '2',
-    title: 'AI & RAG Chatbots',
-    slug: 'ai-rag-chatbots',
-    icon: '🤖',
-    shortDescription: 'Intelligent chatbots powered by GPT-4, LangChain, and custom knowledge bases',
-    fullDescription: 'Build conversational AI that understands your business. We develop RAG (Retrieval-Augmented Generation) chatbots that answer questions from your documents, provide customer support, and automate workflows using OpenAI, LangChain, and vector databases.',
-    features: [
-      'GPT-4 / Claude integration',
-      'Custom RAG pipelines (10k+ documents)',
-      'Vector database setup (Pinecone / Weaviate)',
-      'LangChain / LlamaIndex workflows',
-      'Chat history & memory management',
-      'Multi-modal support (text, PDFs, images)',
-      'Function calling & tool use',
-      'Analytics & conversation insights'
-    ],
-    technologies: ['OpenAI', 'LangChain', 'Python', 'Pinecone', 'FastAPI', 'Streamlit'],
-    startingPrice: '$3,500',
-    deliveryTime: '2-4 weeks'
   },
   {
     id: '3',

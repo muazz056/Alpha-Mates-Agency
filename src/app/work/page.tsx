@@ -7,7 +7,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Projects — Muaz Ijaz Portfolio',
-  description: 'Browse the portfolio of custom web development, AI chatbots, and platform builds by Muaz Ijaz.',
+  description: 'Browse the portfolio of custom development & AI, Shopify, WordPress, and Wix projects by Muaz Ijaz.',
 };
 
 export default function WorkPage() {

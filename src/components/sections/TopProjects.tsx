@@ -48,6 +48,44 @@ const topProjects = [
       'Integrated Stripe payment gateway and Django REST Framework for secure transactions with real-time data synchronization'
     ],
   },
+  {
+    title: 'Heylo',
+    tech: 'React, Node.js, Socket.io, PostgreSQL, Express',
+    liveUrl: 'https://www.heylo.com',
+    highlights: [
+      'Built a comprehensive healthcare support platform connecting professionals with patients through secure video consultations and real-time chat',
+      'Implemented personalized development and care tracking with remote accessibility for continuous monitoring',
+      'Structured communication channels between support professionals and residents'
+    ],
+  },
+  {
+    title: 'Zabihah',
+    tech: 'React Native, Node.js, MongoDB, Google Maps API, Firebase, Stripe',
+    liveUrl: 'https://www.zabihah.com',
+    highlights: [
+      'Developed iOS and Android mobile apps for halal food and mosque discovery with location-based services',
+      'Integrated map-based navigation with 53,000+ verified listings across 100+ countries',
+      'Built intuitive UI/UX for browsing, filtering, and real-time updated listings with reviews and ratings'
+    ],
+  },
+  {
+    title: 'Sonexa Healthcare',
+    tech: 'React Native, Node.js, Python, PostgreSQL, AWS, AI/ML',
+    highlights: [
+      'Built automated speech-to-text transcription for patient visit recordings',
+      'Implemented AI-powered structured healthcare note generation with template-based data population',
+      'Multi-role access system: Super Admin, Admin, and Nurse with mobile-first experience'
+    ],
+  },
+  {
+    title: 'Legal Partner Platform',
+    tech: 'React, Node.js, Socket.io, PostgreSQL, Express, Stripe',
+    highlights: [
+      'Built a digital platform connecting clients with verified legal experts through real-time video consultations',
+      'Implemented instant messaging for quick legal queries and on-demand legal service requests',
+      'Multi-domain legal expertise coverage with remote accessibility from any location'
+    ],
+  },
 ];
 
 export function TopProjects() {

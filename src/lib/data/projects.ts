@@ -27,7 +27,7 @@ export const projects: Project[] = [
     id: '1',
     title: 'ConvoHarbor',
     slug: 'convoharbor',
-    category: 'AI Chatbot',
+    category: 'Custom Development & AI',
     description: 'Production-grade multi-tenant SaaS chatbot platform supporting 11 AI providers with RAG pipeline and real-time streaming',
     image: '/Convoharbor-img.png',
     gallery: [
@@ -53,7 +53,7 @@ export const projects: Project[] = [
     id: '2',
     title: 'Studium',
     slug: 'studium',
-    category: 'AI Chatbot',
+    category: 'Custom Development & AI',
     description: 'AI-powered learning platform that generates notes, flashcards, quizzes, summaries, and mindmaps from uploaded content',
     image: '/studium.png',
     gallery: [
@@ -68,7 +68,7 @@ export const projects: Project[] = [
     impact: [
       'Multi-source content ingestion (PDF, DOCX, YouTube, Web)',
       'SM-2 spaced repetition for optimal review scheduling',
-      'Background job pipeline with real-time status tracking',
+      'Background job pipeline with real-time job status tracking',
       'Stripe subscription billing with 3 tiers',
       '14 SQLAlchemy database models'
     ],
@@ -79,7 +79,7 @@ export const projects: Project[] = [
     id: '3',
     title: 'Meeting Assistant',
     slug: 'meeting-assistant',
-    category: 'AI Chatbot',
+    category: 'Custom Development & AI',
     description: 'Cross-platform Electron desktop app with stealth overlay window invisible to screen-sharing software',
     image: '/stealth-assist.png',
     gallery: [
@@ -104,7 +104,7 @@ export const projects: Project[] = [
     id: '4',
     title: 'Track Hero',
     slug: 'track-hero',
-    category: 'Custom Development',
+    category: 'Custom Development & AI',
     description: 'Comprehensive fullstack platform for motorsport event scheduling, registration, and race timing management',
     image: '/track-hero-img.png',
     gallery: [
@@ -126,36 +126,112 @@ export const projects: Project[] = [
     status: 'Deployed Live'
   },
   {
-    id: '5',
-    title: 'Vercel AI Chatbot',
-    slug: 'vercel-ai-chatbot',
-    category: 'AI Chatbot',
-    description: 'Full-featured, hackable Next.js AI chatbot built with Vercel AI SDK supporting multiple LLM providers',
-    image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop',
+    id: '19',
+    title: 'Heylo',
+    slug: 'heylo',
+    category: 'Custom Development & AI',
+    description: 'Healthcare support platform connecting support professionals with residents through secure video consultations and real-time chat',
+    image: '/heylo-img.png',
     gallery: [
-      'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop',
+      '/heylo-img.png',
     ],
-    tags: ['Next.js', 'TypeScript', 'AI SDK', 'Tailwind CSS', 'PostgreSQL', 'Auth.js'],
+    tags: ['React', 'Node.js', 'Socket.io', 'PostgreSQL', 'Express'],
     year: '2024',
-    client: 'Vercel',
-    role: 'Open Source Contribution',
-    problem: 'Developers need a production-ready chatbot template that supports multiple AI providers, data persistence, and authentication out of the box.',
-    solution: 'Built with Next.js App Router, Vercel AI SDK for unified LLM API, Neon Serverless Postgres for data persistence, Vercel Blob for file storage, and Auth.js for authentication. Supports OpenAI, Anthropic, Google, xAI via AI Gateway.',
+    client: 'Heylo Healthcare',
+    role: 'Full-stack Development',
+    problem: 'Healthcare professionals need a secure digital platform to provide continuous care, personalized guidance, and structured development support to patients through video consultations and real-time communication.',
+    solution: 'Built a comprehensive healthcare support platform with secure video consultations, real-time chat support via Socket.io, personalized development and care tracking, and remote accessibility for continuous monitoring.',
     impact: [
-      '5.1K+ GitHub stars',
-      'Supports 25+ AI providers',
-      'Production-ready with authentication',
-      'Real-time streaming responses',
-      'Deployable with one click to Vercel'
+      'Secure video consultations',
+      'Real-time chat support for ongoing assistance',
+      'Personalized development and care tracking',
+      'Remote accessibility for continuous monitoring',
+      'Structured communication between professionals and patients'
     ],
-    liveUrl: 'https://chatbot.ai-sdk.dev/demo',
+    liveUrl: 'https://www.heylo.com',
     status: 'Deployed Live'
+  },
+  {
+    id: '20',
+    title: 'Zabihah',
+    slug: 'zabihah',
+    category: 'Custom Development & AI',
+    description: 'US-based halal food and mosque discovery platform with mobile apps for iOS and Android with location-based services',
+    image: '/zabihah-img.png',
+    gallery: [
+      '/zabihah-img.png',
+    ],
+    tags: ['React Native', 'Node.js', 'MongoDB', 'Google Maps API', 'Firebase', 'Stripe'],
+    year: '2024',
+    client: 'Zabihah LLC',
+    role: 'Mobile Application Development',
+    problem: 'Muslims and halal food lovers need a reliable platform to discover halal restaurants, mosques, and Islamic services with verified listings and real-time information across 100+ countries.',
+    solution: 'Developed iOS and Android mobile applications with location-based services, map-based navigation, intuitive UI/UX for browsing and filtering, and real-time updated listings with reviews and ratings.',
+    impact: [
+      '53,000+ verified halal listings worldwide',
+      '500K+ app downloads across iOS and Android',
+      'Location-based halal restaurant and mosque discovery',
+      'Human-curated listings since 1998',
+      'Multi-country coverage in 100+ countries'
+    ],
+    liveUrl: 'https://www.zabihah.com',
+    status: 'Deployed Live'
+  },
+  {
+    id: '21',
+    title: 'Sonexa Healthcare',
+    slug: 'sonexa-healthcare',
+    category: 'Custom Development & AI',
+    description: 'Patient-nurse management system with automated transcription, smart note generation, and template-based data population',
+    image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&h=600&fit=crop',
+    gallery: [
+      'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&h=600&fit=crop',
+    ],
+    tags: ['React Native', 'Node.js', 'Python', 'PostgreSQL', 'AWS', 'AI/ML'],
+    year: '2024',
+    client: 'Sonexa Healthcare',
+    role: 'Full-stack Development, AI Integration',
+    problem: 'Healthcare facilities struggle with manual documentation of patient-nurse interactions, leading to errors, inefficiency, and delayed reporting in patient care workflows.',
+    solution: 'Built a comprehensive platform with automated speech-to-text transcription, AI-powered smart note generation, template-based data population, and mobile-first experience for field nurses across iOS and Android.',
+    impact: [
+      'Automated transcription of patient visit recordings',
+      'AI-powered structured healthcare note generation',
+      'Template-based data population for consistency',
+      'Multi-role access: Super Admin, Admin, Nurse',
+      'Mobile-first experience for field nurses'
+    ],
+    status: 'Production Grade'
+  },
+  {
+    id: '22',
+    title: 'Legal Partner Platform',
+    slug: 'legal-partner',
+    category: 'Custom Development & AI',
+    description: 'Digital platform connecting clients with verified legal experts through real-time video consultations and chat-based communication',
+    image: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&h=600&fit=crop',
+    gallery: [
+      'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&h=600&fit=crop',
+    ],
+    tags: ['React', 'Node.js', 'Socket.io', 'PostgreSQL', 'Express', 'Stripe'],
+    year: '2024',
+    client: 'Legal Partner',
+    role: 'Full-stack Development',
+    problem: 'Clients face barriers accessing legal expertise due to geographical limitations, scheduling conflicts, and high costs of traditional legal consultation methods.',
+    solution: 'Built a digital platform enabling real-time video consultations, instant chat-based communication, on-demand legal services, and expert matching across multiple legal domains.',
+    impact: [
+      'Real-time video consultations with legal experts',
+      'Instant messaging for quick legal queries',
+      'On-demand legal service request system',
+      'Multi-domain legal expertise coverage',
+      'Remote accessibility from any location'
+    ],
+    status: 'Production Grade'
   },
   {
     id: '6',
     title: 'Documenso',
     slug: 'documenso',
-    category: 'Custom Development',
+    category: 'Custom Development & AI',
     description: 'Open-source alternative to DocuSign for digital signatures and document workflows',
     image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=600&fit=crop',
     tags: ['Next.js', 'TypeScript', 'Prisma', 'PostgreSQL', 'Tailwind CSS', 'Stripe'],
@@ -172,29 +248,6 @@ export const projects: Project[] = [
       'API-first architecture'
     ],
     liveUrl: 'https://documenso.com',
-    status: 'Deployed Live'
-  },
-  {
-    id: '7',
-    title: 'Chatbot UI',
-    slug: 'chatbot-ui',
-    category: 'AI Chatbot',
-    description: 'Open-source chat interface for AI models with Supabase backend and real-time streaming',
-    image: 'https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=800&h=600&fit=crop',
-    tags: ['Next.js', 'TypeScript', 'Supabase', 'OpenAI', 'Tailwind CSS', 'React'],
-    year: '2024',
-    client: 'Open Source',
-    role: 'Full-stack Development',
-    problem: 'Users need a self-hostable, feature-rich chat interface that supports multiple AI providers and maintains conversation history.',
-    solution: 'Built with Next.js, Supabase for authentication and database, OpenAI API integration, real-time streaming responses, file upload support, and conversation management.',
-    impact: [
-      '28K+ GitHub stars',
-      'Self-hostable with Supabase',
-      'Multi-provider AI support',
-      'Real-time streaming',
-      'File upload and management'
-    ],
-    liveUrl: 'https://www.chatbotui.com',
     status: 'Deployed Live'
   },
   {
@@ -287,25 +340,28 @@ export const projects: Project[] = [
   },
   {
     id: '12',
-    title: 'Ninja Forms WordPress Plugin',
-    slug: 'ninja-forms-wordpress',
+    title: 'Quiz Maker Import WordPress Plugin',
+    slug: 'quiz-maker-import-wordpress',
     category: 'WordPress',
-    description: 'Drag-and-drop WordPress form builder plugin with advanced field types and integrations',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop',
-    tags: ['WordPress', 'PHP', 'JavaScript', 'React', 'REST API'],
-    year: '2024',
-    client: 'Ninja Forms',
-    role: 'Plugin Development',
-    problem: 'WordPress users need user-friendly form builder that doesn\'t require coding knowledge and integrates with popular services.',
-    solution: 'Built drag-and-drop form builder with React frontend, WordPress REST API backend, advanced field types, conditional logic, and 30+ third-party integrations.',
-    impact: [
-      '20,000+ active installations',
-      '4.5/5 star rating',
-      '30+ third-party integrations',
-      'GDPR compliant'
+    description: 'WordPress plugin that imports quiz questions from DOCX files and automatically configures them in Quiz Maker plugin',
+    image: '/quiz-importer-img.png',
+    gallery: [
+      '/quiz-importer-img.png',
     ],
-    liveUrl: 'https://ninjaforms.com',
-    status: 'Deployed Live'
+    tags: ['WordPress', 'PHP', 'DOCX Parser', 'REST API', 'Quiz Maker API'],
+    year: '2024',
+    client: 'WordPress Plugin',
+    role: 'Plugin Development',
+    problem: 'Educators and content creators need to import large quiz datasets from DOCX documents into Quiz Maker plugin without manually entering each question.',
+    solution: 'Built a WordPress plugin in PHP that parses DOCX files using a PHPDocx parser, extracts questions, options, and answers, then automatically creates and configures quizzes in the Quiz Maker plugin via its API.',
+    impact: [
+      'Automated DOCX to Quiz Maker import pipeline',
+      'Supports multiple question types (MCQ, true/false, fill-blank)',
+      'Bulk import of hundreds of questions at once',
+      'Automatic answer key mapping and validation',
+      'Eliminates manual data entry for quiz creation'
+    ],
+    status: 'Production Grade'
   },
   {
     id: '13',
@@ -313,7 +369,10 @@ export const projects: Project[] = [
     slug: 'memberpress-lms',
     category: 'WordPress',
     description: 'WordPress learning management system plugin with course builder and membership functionality',
-    image: 'https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=800&h=600&fit=crop',
+    image: '/member-img.png',
+    gallery: [
+      '/member-img.png',
+    ],
     tags: ['WordPress', 'PHP', 'LMS', 'Membership', 'WooCommerce'],
     year: '2024',
     client: 'MemberPress',
@@ -330,54 +389,35 @@ export const projects: Project[] = [
     status: 'Deployed Live'
   },
   {
-    id: '14',
-    title: 'Inbox Zero',
-    slug: 'inbox-zero',
-    category: 'AI Chatbot',
-    description: 'Open-source email app with AI assistance to achieve inbox zero efficiently',
-    image: 'https://images.unsplash.com/photo-1596526131083-e8c633c948d2?w=800&h=600&fit=crop',
-    tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Prisma', 'Tinybird', 'Upstash'],
-    year: '2024',
-    client: 'Open Source',
-    role: 'Full-stack Development',
-    problem: 'Professionals spend hours managing emails and need AI-powered assistance to automatically categorize, prioritize, and respond to emails.',
-    solution: 'Built email client with AI-powered categorization, automated rule engine, bulk actions, analytics dashboard, and integration with Gmail API.',
-    impact: [
-      '3.1K+ GitHub stars',
-      'AI-powered email categorization',
-      'Automated rule engine',
-      'Analytics and productivity insights'
+    id: '23',
+    title: 'Exam Result Export WordPress Plugin',
+    slug: 'exam-result-export-wordpress',
+    category: 'WordPress',
+    description: 'WordPress plugin that exports quiz results from Quiz Maker including quiz data and user records into Excel sheets',
+    image: '/quiz-export-img.png',
+    gallery: [
+      '/quiz-export-img.png',
     ],
-    liveUrl: 'https://www.getinboxzero.com',
-    status: 'Deployed Live'
-  },
-  {
-    id: '15',
-    title: 'Photoshot AI',
-    slug: 'photoshot-ai',
-    category: 'AI Chatbot',
-    description: 'AI avatar generator using Stable Diffusion for creating professional headshots',
-    image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&h=600&fit=crop',
-    tags: ['Next.js', 'React', 'Chakra UI', 'Prisma', 'Replicate', 'Stripe'],
+    tags: ['WordPress', 'PHP', 'PHPExcel', 'REST API', 'Quiz Maker API', 'Excel Export'],
     year: '2024',
-    client: 'Open Source',
-    role: 'Full-stack Development',
-    problem: 'Professionals need affordable AI-generated headshots without expensive photography sessions.',
-    solution: 'Built AI avatar generator using Stable Diffusion model via Replicate API, with Next.js frontend, Chakra UI components, Prisma database, and Stripe payments.',
+    client: 'WordPress Plugin',
+    role: 'Plugin Development',
+    problem: 'Educators need to export complete quiz results data including user information, scores, and quiz details for reporting, analysis, and record-keeping beyond the quiz plugin limitations.',
+    solution: 'Built a WordPress plugin in PHP that fetches quiz results from Quiz Maker plugin API, joins with WordPress user tables for complete records, and exports everything into structured Excel sheets using PHPExcel library.',
     impact: [
-      '3.6K+ GitHub stars',
-      'AI-powered avatar generation',
-      'Customization options',
-      'Payment integration'
+      'Exports complete quiz and user data in one Excel file',
+      'Joins quiz results with user profiles for full records',
+      'Supports filtering by date range, quiz, and user',
+      'One-click bulk export for entire course or class',
+      'Downloadable Excel files for offline analysis and reporting'
     ],
-    liveUrl: 'https://photoshot.app',
-    status: 'Deployed Live'
+    status: 'Production Grade'
   },
   {
     id: '16',
     title: 'Cal.com Scheduling',
     slug: 'cal-com-scheduling',
-    category: 'Custom Development',
+    category: 'Custom Development & AI',
     description: 'Open-source scheduling infrastructure alternative to Calendly',
     image: 'https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=800&h=600&fit=crop',
     tags: ['Next.js', 'TypeScript', 'Prisma', 'PostgreSQL', 'Tailwind CSS', 'tRPC'],
@@ -397,32 +437,10 @@ export const projects: Project[] = [
     status: 'Deployed Live'
   },
   {
-    id: '17',
-    title: 'Twenty CRM',
-    slug: 'twenty-crm',
-    category: 'Custom Development',
-    description: 'Open-source CRM alternative to Salesforce built with modern tech stack',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop',
-    tags: ['React', 'TypeScript', 'Node.js', 'PostgreSQL', 'GraphQL', 'Tailwind CSS'],
-    year: '2024',
-    client: 'Twenty',
-    role: 'Full-stack Development',
-    problem: 'Startups need affordable, customizable CRM solution without Salesforce complexity and pricing.',
-    solution: 'Built open-source CRM with React frontend, Node.js backend, PostgreSQL database, GraphQL API, custom object builder, and workflow automation.',
-    impact: [
-      '15K+ GitHub stars',
-      'Custom object builder',
-      'Workflow automation',
-      'API-first architecture'
-    ],
-    liveUrl: 'https://twenty.com',
-    status: 'Deployed Live'
-  },
-  {
     id: '18',
     title: 'Invoiceninja',
     slug: 'invoiceninja',
-    category: 'Custom Development',
+    category: 'Custom Development & AI',
     description: 'Open-source invoicing platform for freelancers and small businesses',
     image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=600&fit=crop',
     tags: ['Laravel', 'PHP', 'Vue.js', 'PostgreSQL', 'MySQL', 'Docker'],

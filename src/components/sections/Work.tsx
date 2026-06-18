@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { projects } from '@/lib/data/projects';
 import { OptimizedImage } from '@/components/ui/OptimizedImage';
 
-const categories = ['All', 'Custom Development', 'AI Chatbot', 'Shopify', 'WordPress', 'Wix'];
+const categories = ['All', 'Custom Development & AI', 'Shopify', 'WordPress', 'Wix'];
 
 export function Work() {
   const [filter, setFilter] = useState('All');
