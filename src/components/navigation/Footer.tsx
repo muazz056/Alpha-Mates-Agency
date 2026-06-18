@@ -11,7 +11,7 @@ const footerLinks = {
   connect: [
     { href: 'mailto:muaxijaz@gmail.com', label: 'muaxijaz@gmail.com', external: true },
     { href: 'https://calendly.com/', label: 'Book a Call', external: true },
-    { href: 'https://linkedin.com/', label: 'LinkedIn', external: true },
+    { href: 'https://www.linkedin.com/in/chaudhry-muaz-ijaz/', label: 'LinkedIn', external: true },
   ],
   legal: [
     { href: '/privacy', label: 'Privacy Policy' },
@@ -39,7 +39,7 @@ export function Footer() {
             </p>
             <div className="mt-6 flex items-center gap-3">
               <a
-                href="https://linkedin.com/"
+                href="https://www.linkedin.com/in/chaudhry-muaz-ijaz/"
                 target="_blank"
                 rel="noreferrer"
                 className="flex h-9 w-9 items-center justify-center rounded-xl border border-zinc-200 text-zinc-500 transition hover:border-brand-200 hover:text-brand-600 dark:border-zinc-700 dark:hover:border-brand-800 dark:hover:text-brand-400"

@@ -192,7 +192,7 @@ export function MobileMenu() {
                   Email
                 </a>
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/chaudhry-muaz-ijaz/"
                   target="_blank"
                   rel="noreferrer"
                   className="flex items-center gap-2 hover:text-brand-600 dark:hover:text-brand-400"
