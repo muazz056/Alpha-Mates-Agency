@@ -335,7 +335,6 @@ export const projects: Project[] = [
       'Global CDN with 35+ locations',
       'Automated daily backups'
     ],
-    liveUrl: 'https://kinsta.com',
     status: 'Deployed Live'
   },
   {
@@ -361,7 +360,7 @@ export const projects: Project[] = [
       'Automatic answer key mapping and validation',
       'Eliminates manual data entry for quiz creation'
     ],
-    status: 'Production Grade'
+    status: 'Deployed Live'
   },
   {
     id: '13',
@@ -385,7 +384,6 @@ export const projects: Project[] = [
       'Drip content scheduling',
       'Membership management system'
     ],
-    liveUrl: 'https://memberpress.com',
     status: 'Deployed Live'
   },
   {
@@ -411,7 +409,7 @@ export const projects: Project[] = [
       'One-click bulk export for entire course or class',
       'Downloadable Excel files for offline analysis and reporting'
     ],
-    status: 'Production Grade'
+    status: 'Deployed Live'
   },
   {
     id: '16',
