@@ -17,6 +17,25 @@ export default function ConvoharborWidget() {
     };
     try { sessionStorage.setItem('convoharbor_website_context', JSON.stringify(ctx)); } catch(e) {}
 
+    var _lastW = 0, _lastH = 0;
+    var _applySize = function(w: number, h: number) {
+      _lastW = w; _lastH = h;
+      var f = document.querySelector('iframe[data-convoharbor]') as HTMLIFrameElement | null;
+      if(!f) return;
+      var cw = Math.min(w + 20, window.innerWidth);
+      var ch = Math.min(h + 20, window.innerHeight);
+      f.style.width = cw + 'px';
+      f.style.height = ch + 'px';
+    };
+    function _onMessage(e: MessageEvent) {
+      if(e.data && e.data.type === 'convoharbor_resize') _applySize(e.data.width, e.data.height);
+    }
+    function _onResize() {
+      if(_lastW > 0) _applySize(_lastW, _lastH);
+    }
+    window.addEventListener('message', _onMessage);
+    window.addEventListener('resize', _onResize);
+
     const mount = document.getElementById('convoharbor-widget-container') || (() => {
       const d = document.createElement('div');
       d.id = 'convoharbor-widget-container';
@@ -33,8 +52,8 @@ export default function ConvoharborWidget() {
       border: 'none', outline: 'none', position: 'fixed',
       zIndex: '9999', pointerEvents: 'auto', background: 'transparent'
     });
-    i.style.width = '400px';
-    i.style.height = '620px';
+    i.style.width = '60px';
+    i.style.height = '60px';
     i.style.maxWidth = '100vw';
     i.style.maxHeight = '100vh';
     i.style.bottom = '0';
@@ -42,7 +61,7 @@ export default function ConvoharborWidget() {
     i.allow = 'clipboard-write;';
     mount.appendChild(i);
 
-    return () => { i.remove(); };
+    return () => { i.remove(); window.removeEventListener('message', _onMessage); window.removeEventListener('resize', _onResize); };
   }, []);
 
   return null;
