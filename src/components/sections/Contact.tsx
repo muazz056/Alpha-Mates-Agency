@@ -218,7 +218,7 @@ export function Contact() {
               <h3 className="mb-5 text-lg font-semibold">Contact Information</h3>
               <div className="space-y-4">
                 <a
-                  href="mailto:muaxijaz@gmail.com"
+                  href="mailto:alphamates.inc@gmail.com"
                   className="focus-outline group flex items-center gap-4 rounded-2xl p-3 transition hover:bg-black/5 dark:hover:bg-white/5"
                 >
                   <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-brand-500/10 text-brand-600 dark:text-brand-400">
@@ -229,7 +229,7 @@ export function Contact() {
                   <div>
                     <div className="text-sm font-medium">Email</div>
                     <div className="text-sm text-zinc-500 group-hover:text-brand-600 dark:text-zinc-400 dark:group-hover:text-brand-400">
-                      muaxijaz@gmail.com
+                      alphamates.inc@gmail.com
                     </div>
                   </div>
                 </a>

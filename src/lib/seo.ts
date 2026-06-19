@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
-const title = 'Muaz Ijaz — Full Stack Software Engineer';
-const description = 'Full-stack JavaScript & Python development. AI-native chatbots, e-commerce, and platform builds that ship fast and scale reliably.';
-const url = 'https://muazijaz.dev';
+const title = 'Alpha Mates — Full Service Digital Agency';
+const description = 'We are Alpha Mates — a team of engineers, designers, and AI specialists building custom software, AI chatbots, and platform solutions that ship fast and scale reliably.';
+const url = 'https://alphamates.dev';
 
 export const SEO_DEFAULT: Metadata = {
   metadataBase: new URL(url),
@@ -12,9 +12,9 @@ export const SEO_DEFAULT: Metadata = {
     title,
     description,
     url,
-    siteName: 'Muaz Ijaz',
+    siteName: 'Alpha Mates',
     images: [
-      { url: '/api/og', width: 1200, height: 630, alt: 'Muaz Ijaz' }
+      { url: '/api/og', width: 1200, height: 630, alt: 'Alpha Mates' }
     ],
     locale: 'en_US',
     type: 'website'

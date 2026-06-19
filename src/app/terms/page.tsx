@@ -3,8 +3,8 @@ import { Footer } from '@/components/navigation/Footer';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Terms of Service — Muaz Ijaz',
-  description: 'Terms and conditions for using the services of Muaz Ijaz.',
+  title: 'Terms of Service — Alpha Mates',
+  description: 'Terms and conditions for using the services of Alpha Mates.',
 };
 
 export default function TermsPage() {
@@ -73,8 +73,8 @@ export default function TermsPage() {
               </h2>
               <p>
                 For questions about these terms, contact us at{' '}
-                <a href="mailto:legal@example.com" className="text-brand-600 hover:underline dark:text-brand-400">
-                  legal@example.com
+                <a href="mailto:alphamates.inc@gmail.com" className="text-brand-600 hover:underline dark:text-brand-400">
+                  alphamates.inc@gmail.com
                 </a>
                 .
               </p>

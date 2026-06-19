@@ -9,6 +9,7 @@ const menuItems = [
   { href: '/services', label: 'Services', icon: '💼' },
   { href: '/work', label: 'Work', icon: '🎨' },
   { href: '/process', label: 'Process', icon: '⚙️' },
+  { href: '/#team', label: 'Team', icon: '👥' },
   { href: '/testimonials', label: 'Testimonials', icon: '⭐' },
   { href: '/contact', label: 'Contact', icon: '💬' },
 ];
@@ -99,7 +100,7 @@ export function MobileMenu() {
                   onClick={() => setOpen(false)}
                   className="text-xl font-bold text-brand-600 dark:text-brand-400"
                 >
-                  Muaz Ijaz
+                  Alpha Mates
                 </Link>
               </motion.div>
 
@@ -178,7 +179,7 @@ export function MobileMenu() {
 
               <div className="mt-4 flex items-center justify-center gap-6 text-sm text-zinc-600 dark:text-zinc-400">
                 <a
-                  href="mailto:muaxijaz@gmail.com"
+                  href="mailto:alphamates.inc@gmail.com"
                   className="flex items-center gap-2 hover:text-brand-600 dark:hover:text-brand-400"
                 >
                   <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -192,7 +193,7 @@ export function MobileMenu() {
                   Email
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/chaudhry-muaz-ijaz/"
+                  href="https://www.linkedin.com/in/alpha-mates-inc-76718731b/"
                   target="_blank"
                   rel="noreferrer"
                   className="flex items-center gap-2 hover:text-brand-600 dark:hover:text-brand-400"

@@ -35,7 +35,7 @@ export function Hero() {
             className="mb-6 inline-flex items-center gap-2 rounded-full border border-brand-200 bg-brand-50 px-4 py-1.5 text-sm font-semibold text-brand-700 dark:border-brand-800 dark:bg-brand-900/20 dark:text-brand-300"
           >
             <span className="flex h-5 w-5 items-center justify-center rounded-full bg-brand-600 text-[10px] text-white dark:bg-brand-500">✦</span>
-            Full Stack Software Engineer
+            Full Service Agency
           </motion.div>
         </motion.div>
 
@@ -45,11 +45,11 @@ export function Hero() {
           className="text-4xl font-extrabold tracking-tight sm:text-6xl lg:text-7xl xl:text-8xl"
         >
           <span className="bg-gradient-to-r from-zinc-900 via-zinc-700 to-zinc-900 bg-clip-text text-transparent dark:from-white dark:via-zinc-100 dark:to-white">
-            Hi, I’m Muaz Ijaz
+            We Build
           </span>
           <br />
           <span className="bg-gradient-to-r from-brand-500 via-brand-600 to-brand-700 bg-clip-text text-transparent">
-            Full Stack Software Engineer
+            Digital Products That Scale
           </span>
         </motion.h1>
 
@@ -58,8 +58,8 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
           className="max-w-2xl text-base leading-relaxed text-zinc-600 dark:text-zinc-300 sm:text-lg"
         >
-          Full-stack JavaScript & Python development. AI-native chatbots, e-commerce, and
-          platform builds that ship fast and scale reliably.
+          We are Alpha Mates — a team of engineers, designers, and AI specialists. We build
+          custom software, AI chatbots, and platform solutions that ship fast and scale reliably.
         </motion.p>
 
         <motion.div
@@ -79,7 +79,7 @@ export function Hero() {
           </Link>
 
           <a
-            href="https://www.linkedin.com/in/chaudhry-muaz-ijaz/"
+            href="https://www.linkedin.com/in/alpha-mates-inc-76718731b/"
             target="_blank"
             rel="noreferrer"
           >

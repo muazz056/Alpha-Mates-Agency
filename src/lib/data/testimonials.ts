@@ -76,8 +76,8 @@ export const testimonials: Testimonial[] = [
 ];
 
 export const stats = [
-  { label: 'Happy Clients', value: '40+' },
-  { label: 'Projects Delivered', value: '60+' },
+  { label: 'Happy Clients', value: '100+' },
+  { label: 'Projects Delivered', value: '100+' },
   { label: 'Client Retention', value: '95%' },
   { label: 'Avg. Satisfaction', value: '4.9/5' }
 ];

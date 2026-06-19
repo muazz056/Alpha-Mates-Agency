@@ -9,9 +9,9 @@ const footerLinks = {
     { href: '/contact', label: 'Contact' },
   ],
   connect: [
-    { href: 'mailto:muaxijaz@gmail.com', label: 'muaxijaz@gmail.com', external: true },
+    { href: 'mailto:alphamates.inc@gmail.com', label: 'alphamates.inc@gmail.com', external: true },
     { href: 'https://calendly.com/', label: 'Book a Call', external: true },
-    { href: 'https://www.linkedin.com/in/chaudhry-muaz-ijaz/', label: 'LinkedIn', external: true },
+    { href: 'https://www.linkedin.com/in/alpha-mates-inc-76718731b/', label: 'LinkedIn', external: true },
   ],
   legal: [
     { href: '/privacy', label: 'Privacy Policy' },
@@ -27,19 +27,19 @@ export function Footer() {
           <div className="lg:col-span-1">
             <Link href="/" className="group mb-4 inline-flex items-center gap-2">
               <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-brand-500 to-brand-700 text-xs font-bold text-white shadow">
-                MI
+                AM
               </span>
               <span className="text-sm font-bold tracking-tight">
-                Muaz Ijaz<span className="text-brand-600 dark:text-brand-400">.</span>
+                Alpha Mates<span className="text-brand-600 dark:text-brand-400">.</span>
               </span>
             </Link>
             <p className="mt-3 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
               Custom JavaScript & Python development. AI RAG chatbots. Platform builds that ship
-              fast and scale reliably.
+              fast and scale reliably. We are Alpha Mates — your dedicated team of engineers.
             </p>
             <div className="mt-6 flex items-center gap-3">
               <a
-                href="https://www.linkedin.com/in/chaudhry-muaz-ijaz/"
+                href="https://www.linkedin.com/in/alpha-mates-inc-76718731b/"
                 target="_blank"
                 rel="noreferrer"
                 className="flex h-9 w-9 items-center justify-center rounded-xl border border-zinc-200 text-zinc-500 transition hover:border-brand-200 hover:text-brand-600 dark:border-zinc-700 dark:hover:border-brand-800 dark:hover:text-brand-400"
@@ -128,7 +128,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-zinc-200 py-6 text-center text-xs text-zinc-400 dark:border-zinc-800">
-          <p>&copy; {new Date().getFullYear()} Muaz Ijaz. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Alpha Mates. All rights reserved.</p>
         </div>
       </div>
     </footer>

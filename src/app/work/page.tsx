@@ -6,8 +6,8 @@ import { projects } from '@/lib/data/projects';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Projects — Muaz Ijaz Portfolio',
-  description: 'Browse the portfolio of custom development & AI, Shopify, WordPress, and Wix projects by Muaz Ijaz.',
+  title: 'Our Projects — Alpha Mates Portfolio',
+  description: 'Browse the portfolio of custom development & AI, Shopify, WordPress, and Wix projects by Alpha Mates.',
 };
 
 export default function WorkPage() {

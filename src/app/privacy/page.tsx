@@ -3,8 +3,8 @@ import { Footer } from '@/components/navigation/Footer';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy — Muaz Ijaz',
-  description: 'Our privacy policy and data handling practices for Muaz Ijaz.',
+  title: 'Privacy Policy — Alpha Mates',
+  description: 'Our privacy policy and data handling practices for Alpha Mates.',
 };
 
 export default function PrivacyPage() {
@@ -63,8 +63,8 @@ export default function PrivacyPage() {
               </h2>
               <p>
                 For privacy-related inquiries, contact us at{' '}
-                <a href="mailto:privacy@example.com" className="text-brand-600 hover:underline dark:text-brand-400">
-                  privacy@example.com
+                <a href="mailto:alphamates.inc@gmail.com" className="text-brand-600 hover:underline dark:text-brand-400">
+                  alphamates.inc@gmail.com
                 </a>
                 .
               </p>

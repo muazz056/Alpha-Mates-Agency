@@ -5,5 +5,9 @@ node_modules
 .env.local
 dist
 coverage
+opencode.txt
+*.md
+tsconfig.tsbuildinfo
+*.tsbuildinfo
 
 

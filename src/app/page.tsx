@@ -5,6 +5,7 @@ import { TopProjects } from '@/components/sections/TopProjects';
 import { Services } from '@/components/sections/Services';
 import { Work } from '@/components/sections/Work';
 import { Process } from '@/components/sections/Process';
+import { Team } from '@/components/sections/Team';
 import { Testimonials } from '@/components/sections/Testimonials';
 import { Contact } from '@/components/sections/Contact';
 import { Stats } from '@/components/sections/Stats';
@@ -21,6 +22,7 @@ export default function HomePage() {
         <Services />
         <Work />
         <Process />
+        <Team />
         <Testimonials />
         <Contact />
       </main>

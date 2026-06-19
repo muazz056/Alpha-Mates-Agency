@@ -9,6 +9,7 @@ const navItems = [
   { href: '/services', label: 'Services' },
   { href: '/work', label: 'Work' },
   { href: '/process', label: 'Process' },
+  { href: '/#team', label: 'Team' },
   { href: '/testimonials', label: 'Testimonials' },
   { href: '/contact', label: 'Contact' },
 ];
@@ -22,10 +23,10 @@ export function Navbar() {
         <div className="flex items-center justify-between py-4">
           <Link href="/" className="group flex items-center gap-2 rounded-xl px-2 py-1 focus-outline">
             <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-brand-500 to-brand-700 text-xs font-bold text-white shadow">
-              MI
+              AM
             </span>
             <span className="text-sm font-bold tracking-tight text-zinc-900 dark:text-white">
-              Muaz Ijaz<span className="text-brand-600 dark:text-brand-400">.</span>
+              Alpha Mates<span className="text-brand-600 dark:text-brand-400">.</span>
             </span>
           </Link>
 
@@ -57,7 +58,7 @@ export function Navbar() {
               )}
             </motion.button>
             <a
-              href="https://www.linkedin.com/in/chaudhry-muaz-ijaz/"
+              href="https://www.linkedin.com/in/alpha-mates-inc-76718731b/"
               target="_blank"
               rel="noreferrer"
               className="flex h-9 w-9 items-center justify-center rounded-xl text-zinc-500 transition hover:bg-white/60 hover:text-brand-600 dark:text-zinc-400 dark:hover:bg-white/10 dark:hover:text-brand-400 focus-outline"

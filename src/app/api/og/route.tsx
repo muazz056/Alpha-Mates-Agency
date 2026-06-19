@@ -18,7 +18,7 @@ export async function GET() {
           fontWeight: 700,
         }}
       >
-        Muaz Ijaz
+        Alpha Mates
       </div>
     ),
     { width: 1200, height: 630 },
