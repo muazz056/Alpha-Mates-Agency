@@ -51,12 +51,17 @@ function shuffleArray<T>(arr: T[]): T[] {
   return shuffled;
 }
 
+const muazMember = teamMembers.find((m) => m.name === 'Muaz Ijaz')!;
+const others = teamMembers.filter((m) => m.name !== 'Muaz Ijaz');
+
 export function Team() {
-  const [shuffled, setShuffled] = useState(teamMembers);
+  const [ordered, setOrdered] = useState(teamMembers);
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    setShuffled(shuffleArray(teamMembers));
+    const shuffledOthers = shuffleArray(others);
+    const withMuazCenter = [...shuffledOthers.slice(0, 2), muazMember, ...shuffledOthers.slice(2)];
+    setOrdered(withMuazCenter);
     setMounted(true);
   }, []);
 
@@ -143,7 +148,11 @@ export function Team() {
             </p>
           </div>
           <div className="mx-auto max-w-6xl grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6">
-            {teamMembers.map((member, i) => card(member, i, false))}
+            {(() => {
+              const ssrOthers = teamMembers.filter((m) => m.name !== 'Muaz Ijaz');
+              const ssr = [...ssrOthers.slice(0, 2), muazMember, ...ssrOthers.slice(2)];
+              return ssr.map((member, i) => card(member, i, false));
+            })()}
           </div>
         </div>
       </section>
@@ -168,7 +177,7 @@ export function Team() {
         </motion.div>
 
         <div className="mx-auto max-w-6xl grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6">
-          {shuffled.map((member, i) => card(member, i, true))}
+          {ordered.map((member, i) => card(member, i, true))}
         </div>
       </div>
     </section>
