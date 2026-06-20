@@ -23,8 +23,8 @@ const teamMembers = [
     name: 'Muneeb Hassan',
     role: 'Sr. ML/AI Engineer',
     image: '/muneeb-ai-engineer.png',
-    email: null,
-    linkedin: null,
+    email: 'muneebhassanmalik@gmail.com',
+    linkedin: 'https://www.linkedin.com/in/muneeb-hassan-a3a99224a',
   },
   {
     name: 'Hashir Azeem',
@@ -37,8 +37,8 @@ const teamMembers = [
     name: 'Azeem Manzoor',
     role: 'Sr. QA Tester & Automation Engineer',
     image: '/azeem-QA.png',
-    email: null,
-    linkedin: null,
+    email: 'datapirate56@gmail.com',
+    linkedin: 'https://www.linkedin.com/in/azeem-manzoor-36a739233/',
   },
 ];
 
