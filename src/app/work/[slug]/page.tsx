@@ -109,7 +109,11 @@ export default function ProjectPage({ params }: Props) {
               alt={project.title}
               fill
               sizes="(max-width: 1024px) 100vw, 896px"
-              className="object-contain p-4"
+              className={`${
+                project.image.startsWith('http')
+                  ? 'object-cover'
+                  : 'object-contain p-4'
+              }`}
               priority
             />
           </div>
