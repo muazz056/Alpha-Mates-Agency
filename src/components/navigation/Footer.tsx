@@ -10,7 +10,7 @@ const footerLinks = {
   ],
   connect: [
     { href: 'mailto:alphamates.inc@gmail.com', label: 'alphamates.inc@gmail.com', external: true },
-    { href: 'https://calendly.com/', label: 'Book a Call', external: true },
+    { href: '/contact', label: 'Book a Call' },
     { href: 'https://www.linkedin.com/in/alpha-mates-inc-76718731b/', label: 'LinkedIn', external: true },
   ],
   legal: [

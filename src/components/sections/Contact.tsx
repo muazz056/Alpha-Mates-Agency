@@ -15,6 +15,7 @@ export function Contact() {
     const data = {
       name: formData.get('name'),
       email: formData.get('email'),
+      phone: formData.get('phone'),
       project: formData.get('project'),
       budget: formData.get('budget'),
       timeline: formData.get('timeline'),
@@ -97,6 +98,18 @@ export function Contact() {
                     required
                     className="focus-outline w-full rounded-xl border border-zinc-200 bg-white/80 px-4 py-3 text-sm transition focus:border-brand-300 focus:bg-white focus:ring-4 focus:ring-brand-500/10 dark:border-zinc-700 dark:bg-zinc-900/80 dark:focus:border-brand-700 dark:focus:bg-zinc-900"
                     placeholder="john@example.com"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="phone" className="mb-1.5 block text-sm font-medium text-zinc-700 dark:text-zinc-300">
+                    Phone <span className="text-zinc-400">(optional)</span>
+                  </label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    className="focus-outline w-full rounded-xl border border-zinc-200 bg-white/80 px-4 py-3 text-sm transition focus:border-brand-300 focus:bg-white focus:ring-4 focus:ring-brand-500/10 dark:border-zinc-700 dark:bg-zinc-900/80 dark:focus:border-brand-700 dark:focus:bg-zinc-900"
+                    placeholder="+1 (555) 000-0000"
                   />
                 </div>
               </div>
@@ -234,9 +247,7 @@ export function Contact() {
                   </div>
                 </a>
                 <a
-                  href="https://calendly.com/"
-                  target="_blank"
-                  rel="noreferrer"
+                  href="/contact"
                   className="focus-outline group flex items-center gap-4 rounded-2xl p-3 transition hover:bg-black/5 dark:hover:bg-white/5"
                 >
                   <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-brand-500/10 text-brand-600 dark:text-brand-400">

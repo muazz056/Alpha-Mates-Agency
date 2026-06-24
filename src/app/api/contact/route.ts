@@ -46,6 +46,7 @@ export async function POST(request: NextRequest) {
             <div class="value">${data.name}</div>
             <div class="label">Email</div>
             <div class="value">${data.email}</div>
+            ${data.phone ? `<div class="label">Phone</div><div class="value">${data.phone}</div>` : ''}
             ${data.project ? `<div class="label">Project Type</div><div class="value">${data.project}</div>` : ''}
             ${data.budget ? `<div class="label">Budget</div><div class="value">${data.budget}</div>` : ''}
             ${data.timeline ? `<div class="label">Timeline</div><div class="value">${data.timeline}</div>` : ''}
